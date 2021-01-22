@@ -18,11 +18,12 @@ function budgetCalculator(watch, mobile, laptop) {
     var watchPrice = 50;  /**Here watch price is fixed*/
     var mobilePrice = 100;  /**Here mobile price is fixed*/
     var laptopPrice = 500;  /**Here laptop price is fixed*/
-
-    var totalBudget = (watch * watchPrice) + (mobile * mobilePrice) + (laptop * laptopPrice);
+    var totalWatch = watch * watchPrice;
+    var totalMobile = mobile * mobilePrice;
+    var totalLaptop = laptop * laptopPrice;
+    var totalBudget = totalWatch + totalMobile + totalLaptop;
     return totalBudget;
 }
-
 
 // Problem 3 hotelCost
 
