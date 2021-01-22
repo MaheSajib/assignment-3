@@ -15,9 +15,9 @@ function kilometerToMeter(kilometer) {
 // Problem 2 budgetCalculator
 
 function budgetCalculator(watch, mobile, laptop) {
-    var watchPrice = 50;
-    var mobilePrice = 100;
-    var laptopPrice = 500;
+    var watchPrice = 50;  /**Here watch price is fixed*/
+    var mobilePrice = 100;  /**Here mobile price is fixed*/
+    var laptopPrice = 500;  /**Here laptop price is fixed*/
 
     var totalBudget = (watch * watchPrice) + (mobile * mobilePrice) + (laptop * laptopPrice);
     return totalBudget;
