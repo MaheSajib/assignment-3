@@ -1,3 +1,4 @@
+// https://github.com/MaheSajib/assignment-3
 
 
 // This is problem no 1 kilometerToMeter
@@ -50,6 +51,14 @@ function hotelCost(days) {
 
 // Problem 4 megaFriend
 
-function megaFriend() {
+function megaFriend(str) {
+    var names = str.split(" ");
+    var largeName = "";
 
+    for (var name of names) {
+        if (name.length > largeName.length) largeName = name;
+    }
+    return largeName;
 }
+
+var result = megaFriend('rohim korimaa salma jalma');
